@@ -1,0 +1,122 @@
+.bsrCategory1{
+  background: #fff;
+  position: relative;
+  padding: 23px 45px 0px 45px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  min-height: 60px;
+  .bsrTop{
+    .title{
+      text-align: left;
+      line-height: 15px;
+      font-size: 15px;
+      color: #424242;
+      float: left;
+    }
+    .showFloder{
+      position: absolute;
+      right: 27px;
+      top:23px;
+      color: #50b0ec;
+      font-size: 14px;
+      height: 21px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    .permeateTips{
+      position: absolute;
+      left: 208px;
+      top:21px;
+      &:hover{
+        cursor: pointer;
+        .myhelp{
+          color: #49a9ee;
+        }
+      }
+      &.newsPermeate{
+        left: 228px;
+      }
+      .mytipsContent{
+        white-space: normal;
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+  .btns{
+    width: 116px;
+    height: 34px;
+    display: block;
+    position: absolute;
+    right: 70px;
+    top:55px;
+    &:hover{
+      cursor: pointer;
+    }
+    > span {
+      &.active {
+        background: #50b0ec;
+        color: #fff;
+        border: 1px solid #50b0ec;
+      }
+      display: block;
+      float: left;
+      height: 33px;
+      line-height: 33px;
+      width: 50%;
+      text-align: center;
+      color: #9d9d9d;
+      font-size: 14px;
+      border: 1px solid #dcdcdc;
+      &:first-of-type {
+        border-right: none;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius:4px;
+      }
+      &:last-of-type{
+        border-top-right-radius: 4px;
+        border-bottom-right-radius:4px;
+      }
+    }
+  }
+  .bsrlist{
+    width:95%;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    .myChart{
+      min-height: 350px;
+    }
+    .ivu-table:after{
+      width: 1px !important;
+    }
+  }
+  .ivu-table:before{
+    /*width: 0 !important;*/
+  }
+  .ivu-table-header{
+    thead{
+      tr{
+        .ivu-table-cell{
+          min-width: 100px !important;
+        }
+      }
+    }
+  }
+  .ivu-table-wrapper{
+    border-right: 1px solid #dddee1;
+  }
+  .graphTendency{
+    background: #fff;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    width: 50%;
+    height: 250px;
+    position: absolute;
+    top:175px;
+    transform: translateX(30%);
+    z-index:100;
+  }
+}

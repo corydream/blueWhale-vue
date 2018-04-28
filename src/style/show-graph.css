@@ -1,0 +1,31 @@
+.el-input--small>.el-input__inner{
+    background: #30363d;
+    border: 1px solid #78818c!important;
+    border-radius: 0;
+    color: #8b8e92;
+}
+.el-input--small>.el-input__inner::placeholder{
+    color: #8b8e92;
+}
+.input-search{
+    color:#78818c;
+    position: absolute;
+    top: 5px;
+    right: 24px;
+}
+.ivu-poptip-rel {
+    display: inline-block;
+    position: inherit;
+}
+.ivu-poptip-popper{
+    min-width: 70px;
+}
+.ivu-menu-vertical .ivu-menu-submenu-title{
+    padding: 10px 24px!important;
+}
+.el-select{
+    border:none!important;
+}
+.ivu-checkbox-group{
+    height: 350px;
+}

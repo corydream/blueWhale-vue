@@ -1,0 +1,115 @@
+<template>
+    <div>
+      <div class="agents-box">
+        <competProduct :dataList="dataAgentsList" title="竞品数据"></competProduct>
+      </div>
+    </div>
+</template>
+<script>
+    import competProduct from '../commons/competProduct.vue';
+    export default {
+        data() {
+          return{
+             dataAgentsList:[
+               {
+                 productType:"1",
+                 products:[
+                   {
+                     name:"阿里巴巴",
+                     img:require("../../assets/images/icon-1.png"),
+                     type:'1'
+                   },
+                   {
+                     name:"ebay",
+                     img:require("../../assets/images/icon-2.png"),
+                     type:'2'
+                   },
+                   {
+                     name:"亚马逊",
+                     img:require("../../assets/images/icon-3.png"),
+                     type:'3'
+                   },
+                   {
+                     name:"速卖通",
+                     img:require("../../assets/images/icon-14.png"),
+                     type:'14'
+                   },
+                   {
+                     name:"GEARBEST",
+                     img:require("../../assets/images/icon-4.png"),
+                     type:'4'
+                   },
+                   {
+                     name:"Lightinthebox",
+                     img:require("../../assets/images/icon-5.png"),
+                     type:'5'
+                   },
+                   {
+                     name:"TOMTOP",
+                     img:require("../../assets/images/icon-6.png"),
+                     type:'6'
+                   },
+                   {
+                     name:"Wish",
+                     img:require("../../assets/images/icon-7.png"),
+                     type:'7'
+                   },
+                   {
+                     name:"dealextreme",
+                     img:require("../../assets/images/icon-8.png"),
+                     type:'8'
+                   },
+                 ]
+               },
+               {
+                 productType:"2",
+                 products:[
+                   {
+                     name:"instagram",
+                     img:require("../../assets/images/icon-9.png"),
+                     type:'9'
+                   },
+                   {
+                     name:"twitter",
+                     img:require("../../assets/images/icon-10.png"),
+                     type:'10'
+                   },
+                   {
+                     name:"tumbir",
+                     img:require("../../assets/images/icon-11.png"),
+                     type:'11'
+                   },
+                   {
+                     name:"You Tube",
+                     img:require("../../assets/images/icon-12.png"),
+                     type:'12'
+                   }
+                 ]
+               },
+               {
+                 productType:"3",
+                 products:[
+                   {
+                     name:"YAHOO",
+                     img:require("../../assets/images/icon-13.png"),
+                     type:'13'
+                   },
+                   {
+                     name:"亚马逊",
+                     img:require("../../assets/images/icon-3.png"),
+                     type:'3'
+                   }
+                 ]
+               }
+             ]
+          }
+        },
+        components:{
+          competProduct
+        }
+
+    }
+</script>
+<style scoped lang="less">
+
+</style>

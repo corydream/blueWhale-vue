@@ -1,0 +1,143 @@
+.menu-wrapper{
+    float: left;
+    background: #fbfbfb;
+    height: calc(100vh - 100px);
+    margin-top: 25px;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    width: 280px;
+}
+.menu-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 40px;
+}
+.default-layer-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom:8px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+.content-title{
+    text-align: left;
+    padding-bottom: 30px;
+}
+.content-btn{
+    margin:10px 50px;
+}
+.content-btn>button:first-child{
+    margin-right: 30px;
+}
+.item-list{
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.item-list:first-child{
+    margin-top: 20px;
+}
+.item-list.active{
+    color: #5DB3F2;
+}
+.ivu-checkbox-wrapper{
+    min-width: 16px;
+}
+/* 设置权限弹框样式 */
+.default-p{
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    margin-left: 30px;
+}
+/* 新增用户弹框样式 */
+.add-frame-curr{
+    height: 40px;
+    background: #b6dcf2;
+    line-height: 40px;
+    text-indent: 30px;
+}
+.frame-container{
+    width: 50%;
+    float: left;
+    height: 430px;
+    margin: 15px 0;
+}
+.frame-container-title{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.frame-btn-group{
+    margin-left: 50px;
+}
+.frame-btn-group>button{
+    margin-right: 15px;
+}
+.frame-board{
+    border: 1px solid #ccc;
+    width: 210px;
+    height: 310px;
+    margin-left: 30px;
+    border-radius: 5px;
+    overflow: auto;
+    padding: 10px;
+}
+.frame-result-board{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 210px;
+    margin:0 0 50px 30px;
+    height: 100px;
+}
+.group-container{
+    margin: 0 2%;
+    width: 46%;
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 470px;
+}
+.group-container-title{
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    height: 20px;
+    margin-top: 10px;
+}
+/* 旋转展开隐藏菜单
+ */
+.fa-sort-up{
+    transition: all 0.5s;
+}
+.sort-rotate{
+    transform: rotate(0);
+    vertical-align: -3px;
+}
+.sort-rotated{
+    transform: rotate(180deg);
+    vertical-align: 3px;
+}
+.fa-location{
+    margin-left: 50px;
+}
+/* 弹框每行间距 */
+.group-item{
+    margin: 20px 30px;
+}
+.manage-item{
+    margin: 20px 0 0 70px;
+}
+.table-page{
+    float: right;
+    margin: 25px 10px 0 0;
+}
+.menu-desc{
+    margin: 5px 40px;
+}
+.menu-desc>span{
+    margin-right: 30px;
+}

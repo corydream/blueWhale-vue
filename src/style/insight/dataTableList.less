@@ -1,0 +1,218 @@
+.vertical-center-modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .ivu-modal{
+    top: 0;
+  }
+  .ivu-modal-footer{
+    border-top: none;
+  }
+  .ivu-modal-body{
+    padding-bottom: 80px;
+    padding-top: 38px;
+  }
+}
+.myFooter{
+  .checkboxTips{
+    float: left;
+  }
+}
+.sortDiv{
+  position: absolute;
+  top:115px;
+  right: 27.5px;
+  width: 208px;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid #e9eaec;
+  border-bottom: none;
+  z-index: 10;
+  .dargDiv{
+    cursor: move;
+    cursor: -webkit-grabbing;
+    p{
+      height: 40px;
+      line-height: 40px;
+      color:#828282;
+      padding-left: 14px;
+      padding-right: 13px;
+      text-align: left;
+      border-bottom: 1px solid #e9eaec;
+      position: relative;
+      .fl{
+        text-align: left;
+      }
+      .fr{
+        position: absolute;
+        right: 13px;
+        top:0px;
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+  }
+}
+.ivu-table-fixed-right{
+  //box-shadow: none;
+}
+.sortState{
+  .ivu-table-cell{
+    padding-left:10px;
+  }
+}
+.collectBtns{
+  height: 36px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+  &:hover{
+    cursor: pointer;
+  }
+  > span {
+    width:110px;
+    float: left;
+    &.active {
+      background: #50b0ec;
+      border: 1px solid #50b0ec;
+      color: #fff;
+    }
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #9d9d9d;
+    font-size: 14px;
+    border: 1px solid #dcdcdc;
+    &:first-of-type {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius:4px;
+    }
+    &:last-of-type{
+      border-top-right-radius: 4px;
+      border-bottom-right-radius:4px;
+    }
+  }
+  #tab2 {
+    border-left: none;
+    border-right: none;
+  }
+}
+.statleList{
+  text-align: left;
+  >p{
+    margin-left:10px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #9d9d9d;
+    position: relative;
+    padding-left: 20px;
+    height: 14px;
+    vertical-align: middle;
+    line-height: 14px;
+    .statleList-title{
+      display: inline-block;
+      font-size: 13px;
+      vertical-align: middle;
+      margin-right: 8px;
+      height: 13px;
+      line-height: 13px;
+      margin-top: -8px;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      border-left: 3px solid #50b0ec;
+      height: 14px;
+      line-height: 14px;
+    }
+  }
+}
+.detailImg{
+  display: block;
+  width: 19px;
+  height:19px;
+  background: url("../images/findDetail.png") no-repeat top center;
+  box-sizing: content-box;
+}
+.develop{
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  box-sizing: content-box;
+  background: url("../images/develop.png") no-repeat top center;
+  position: relative;
+  &:hover{
+    .developText{
+      display: block;
+      visibility: visible;
+      transition: all 0.4s linear;
+    }
+  }
+}
+.developText{
+  position: absolute;
+  right: -43px;
+  top:-42px;
+  min-width: 70px;
+  max-width: 250px;
+  min-height: 34px;
+  padding: 7px 12px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(70,76,91,.9);
+  border-radius: 4px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.2);
+  white-space: nowrap;
+  transform-origin: center bottom 0px;
+  font-Style:normal;
+  display: none;
+  &::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+    left: 20px;
+    margin-left: -5px;
+    bottom: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: rgba(70,76,91,.9);
+  }
+}
+.hasDevelop{
+  &.isShowHas::after{
+    content: "立即开发";
+    width: 100%;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+  }
+  &.isNotShow::after{
+    content: "已开发";
+    width: 100%;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+  }
+}
+.isShowBtn{
+  display: none !important;
+}
+.ivu-table-cell{
+  overflow: inherit !important;
+}
+.develop-active{
+  cursor:pointer;
+  background: url("../images/developActive.png") no-repeat top center;
+}
+.develop.develop-unactive{
+  cursor:inherit;
+  background: url("../images/develop.png") no-repeat top center;
+}
