@@ -18,12 +18,12 @@
             <span class="inner-name" @click="toggleInnerArrow(t)">{{t.folderName}}</span>  
             <!-- <i class="fa fa-sort-up" :class="{'sort-rotated':t.arrow,'sort-rotate':!t.arrow}"></i> -->
             <i class="fa fa-sort-up sort-rotated"></i>
-            <!-- {{t.arrow}} -->
             <ul>
               <li class="inner-board inner-hover" v-for="t_inner in t.boards" @click="selectBoard(t_inner)">
                 <span class="iconfont icon-accountnum inner-icon"></span>
                 <span class="inner-name" >{{t_inner.boardName}}</span>  
               </li> 
+
             </ul>
           </li>
         </ul>
